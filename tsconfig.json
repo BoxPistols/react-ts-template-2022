@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5", // コンパイル先のJSのバージョンを指定する
+    "lib": [ // コンパイルに含むライブラリを指定する
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true, // jsファイルのimportを許可するか
+    "skipLibCheck": true, // 宣言ファイルの型チェックをスキップするか
+    "esModuleInterop": true, // CommonJSとESモジュール間との相互運用を可能にする
+    "allowSyntheticDefaultImports": true, // esModuleInteropと同様. こちらはコンパイル時のみに影響
+    "strict": true, // noImplicitAnyなどの厳密な型チェックがまとめてONになる
+    "forceConsistentCasingInFileNames": true, // 大文字小文字を区別してファイルを参照するか
+    "noFallthroughCasesInSwitch": true, // switch文のbug検出用
+    "module": "esnext", // コンパイル後のモジュール構文をどのモジュールシステム形式にするか設定
+    "moduleResolution": "node", // モジュール解決の方法をnodeにする
+    "resolveJsonModule": true, // jsonのimportを可能にするか
+    "isolatedModules": true, // 全てのファイルを単一のモジュールとしてコンパイルする
+    "noEmit": true, // ファイルを出力しないようにする.TSのコンパイルはbabelで行う
+    "jsx": "react-jsx" // JSX 構文をそのままにしておくか React の構文に書き換えるかを指定するためのオプション
+  },
+  "include": [ // コンパイル対象にするファイルを指定する
+    "src"
+  ],
+  "exclude": ["node_modules", "build"] // コンパイル対象から外すファイルを指定
+}
