@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "es5", // コンパイル先のJSのバージョンを指定する
-    "lib": [ // コンパイルに含むライブラリを指定する
+    "lib": [
+      // コンパイルに含むライブラリを指定する
       "dom",
       "dom.iterable",
       "esnext"
@@ -20,7 +21,8 @@
     "noEmit": true, // ファイルを出力しないようにする.TSのコンパイルはbabelで行う
     "jsx": "react-jsx" // JSX 構文をそのままにしておくか React の構文に書き換えるかを指定するためのオプション
   },
-  "include": [ // コンパイル対象にするファイルを指定する
+  "include": [
+    // コンパイル対象にするファイルを指定する
     "src"
   ],
   "exclude": ["node_modules", "build"] // コンパイル対象から外すファイルを指定
