@@ -12,8 +12,9 @@
     "build": "webpack --config webpack.config.js --env env=prod",
     "lint": " ./node_modules/.bin/eslint src/**/*.{js,jsx,ts,tsx} ",
     "lint:fix": " ./node_modules/.bin/eslint --fix src/**/*.{js,jsx,ts,tsx} ",
-    "prettier": "prettier  ./src/**/*.{js,ts,jsx,tsx} ",
-    "prettier:fix": "prettier  --write ./src/**/*.{js,ts,jsx,tsx} "
+    "prettier": "prettier  --check ./src/**/*.{js,ts,jsx,tsx} ",
+    "format": "prettier  --write ./src/**/*.{js,ts,jsx,tsx} ",
+    "fix": " prettier  --write ./src/**/*.{js,ts,jsx,tsx} &&  eslint --fix src/**/*.{js,jsx,ts,tsx} "
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
